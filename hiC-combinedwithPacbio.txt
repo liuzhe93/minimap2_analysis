@@ -1,0 +1,2 @@
+Kronenberg Z N, Hall R J, Hiendleder S, et al. FALCON-Phase: Integrating PacBio and Hi-C data for phased diploid genomes[J]. bioRxiv, 2018: 327064.
+

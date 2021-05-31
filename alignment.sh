@@ -1,4 +1,4 @@
-git clone https://github.com/lh3/minimap2
+#git clone https://github.com/lh3/minimap2
 minimap2 -ax map-ont reference.fa GZ.fq > GZ.sam
 samtools idxstats file.sam
 canu -p GZ_asb1 -d ./result_dir genomeSize=16569 minReadLength=100 minOverlapLength=50 -nanopore-raw GZ.fq

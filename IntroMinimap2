@@ -1,0 +1,13 @@
+developed by Heng LI
+
+minimap2 has a variety of comparison functions.
+
+In addition to processing nanopore data, it also supports pacbio data. The alignment mode can be reads and reads before, reads to the genome, genome to genome, and short sequence to genome. Different alignments have different effects. You must not set errors. Let's take a concrete case to demonstrate.
+The most commonly used function of minimap2 is to compare sequencing data to the genome. This process is similar to bwa comparison. You need to create an index first, then compare, and finally get the comparison result in sam format. If you are familiar with bwa comparison, then this operation It's very easy.
+The comparison input file of minimap2 is reads sequenced, generally in fastq or fasta format, and the reference genome is generally in fasta format. minimap2 can output paf format and sam format, the default is paf format.
+
+Step 1: Build an index
+
+minimap2 -d co92.min co92.fna
+Step 2: Compare
+minimap2 -ax map-ont co92.min clean.filtlong.fq.gz >mapped.sam
